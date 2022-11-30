@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: Georgia, 'Times New Roman', Times, serif;
+    --fonte3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+
+html, body{
+    min-height: 100hv;
+    background-color: chartreuse;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    font-family: var(--fonte2);
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vh;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vh;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+}
+
+section.normal{
+    background-color: beige;
+    color:blue;
+}
+
+section.image{
+    background-color: rgb(57, 0, 100);
+    color: antiquewhite;
+    box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.492);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.image > p{
+    display: inline-block;
+    background-color: rgba(8, 250, 12, 0.523);
+    padding: 5px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.603);
+    text-shadow: 1px 1px 0px rgb(2, 2, 70);
+}
+
+footer{
+    background-color: deeppink;
+    text-align: center;
+    color: yellow ;
+    padding: 10px;
+}
